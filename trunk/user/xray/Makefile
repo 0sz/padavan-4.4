@@ -1,4 +1,3 @@
-include $(ROOTDIR)/coustom
 THISDIR = $(shell pwd)
 xray_dir="xray.com/core/main"
 export GO111MODULE=on
@@ -41,6 +40,3 @@ clean:
 	
 romfs:
 	$(ROMFSINST) -p +x $(THISDIR)/bin/xray /usr/bin/v2ray
-else
-	$(ROMFSINST) -p +x $(THISDIR)/xray /usr/bin/v2ray
-endif
