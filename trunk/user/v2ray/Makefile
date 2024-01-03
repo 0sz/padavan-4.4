@@ -42,3 +42,6 @@ clean:
 
 romfs:
 	$(ROMFSINST) -p +x $(THISDIR)/bin/v2ray /usr/bin/v2ray
+else
+	$(ROMFSINST) -p +x $(THISDIR)/v2ray /usr/bin/v2ray
+endif
