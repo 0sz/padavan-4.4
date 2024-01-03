@@ -1,4 +1,3 @@
-include $(ROOTDIR)/coustom
 THISDIR = $(shell pwd)
 v2ray_dir="v2ray.com/core/main"
 #export GO111MODULE=on
@@ -42,6 +41,3 @@ clean:
 
 romfs:
 	$(ROMFSINST) -p +x $(THISDIR)/bin/v2ray /usr/bin/v2ray
-else
-	$(ROMFSINST) -p +x $(THISDIR)/v2ray /usr/bin/v2ray
-endif
